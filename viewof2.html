@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="dd.html">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: PaleGreen ;}
+#News {background-color: LightBlue  ;}
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'PaleGreen ')">LIST VIEW</button>
+<button class="tablink" onclick="openPage('News', this, 'LightBlue ')" id="defaultOpen">MATRIX VIEW</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3><br>
+  counter <span class="badge">1</span> of total  <span class="badge">3</span> shown
+  <br></h3>
+
+</div>
+
+<div id="News" class="tabcontent">
+  <h3><br>counter <span class="badge">1</span> of total  <span class="badge">3</span> shown <br></h3>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 20%;
+      padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+      .column  {
+          width: 50%;
+      }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .column  {
+          width: 50%;
+      }
+  }
+  </style>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+
+
+  <div class="row">
+    <div class="column" style="background-color:#000000;">
+      <h2>Price</h2>
+    </div>
+    <div class="column" style="background-color:#000000;">
+      <h2>Airline</h2>
+    </div>
+    <div class="column" style="background-color:#000000;">
+      <h2>Take-off</h2>
+    </div>
+    <div class="column" style="background-color:#000000;">
+      <h2>Landing</h2>
+    </div>
+    <div class="column" style="background-color:#000000;">
+      <h2>Stops(Duration)</h2>
+    </div>
+
+
+    <div class="column" style="background-color:#2F4F4F;">
+
+      <p id="a"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+
+      <p id="b"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+
+      <p id="c"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+
+      <p id="d"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="e"><a href="www.gmail.com">details</a></p>
+    </div>
+
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="a1"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="b1"></p>
+
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="c1"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="d1"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+    <p id="e1"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="a2"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="b2"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+    <p id="c2"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="d2"></p>
+    </div>
+    <div class="column" style="background-color:#2F4F4F;">
+      <p id="e2"></p>
+    </div>
+  </div>
+  <script>
+  var  cars= ["1000"] ;
+  var Airline= ["Thai Smile Air"];
+  var Takeoff= ["BKK 08:00"];
+  var Landing=["CNX 09:40"];
+  var Stops= ["1(12)" ];
+
+  document.getElementById("a").innerHTML = cars;
+  document.getElementById("b").innerHTML = Airline;
+  document.getElementById("c").innerHTML = Takeoff;
+  document.getElementById("d").innerHTML = Landing;
+  document.getElementById("e").innerHTML = Stops;
+
+  var  cars= ["2000"] ;
+  var Airline= ["Nokair Airline"];
+  var Takeoff= ["HDY 09:00"];
+  var Landing=["DMK 10:30"];
+  var Stops= ["kitjapark@gmail.com"];
+  document.getElementById("a1").innerHTML = cars;
+  document.getElementById("b1").innerHTML = Airline;
+  document.getElementById("c1").innerHTML = Takeoff;
+  document.getElementById("d1").innerHTML = Landing;
+  document.getElementById("e1").innerHTML = Stops;
+
+  var  cars= ["3000"] ;
+  var Airline= ["Thai Airways"];
+  var Takeoff= ["HKT 11:00"];
+  var Landing=["CNX 12:30"];
+  var Stops= ["poppy@gmail.com"];
+  document.getElementById("a2").innerHTML = cars;
+  document.getElementById("b2").innerHTML = Airline;
+  document.getElementById("c2").innerHTML = Takeoff;
+  document.getElementById("d2").innerHTML = Landing;
+  document.getElementById("e2").innerHTML = Stops;
+
+  </script>
+
+  </body>
+  </html>
+
+  <div class="row">
+    <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item"><a class="page-link" href="">2</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+  <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link href="s.html">
+ </head>
+
+<!-- comment -->
+ <body background="3.png" style="background-image: padding;" ng-app="flightApp">
+  <div class="search-header">
+    <h1 style="color: Black ;">FLIGHT</h1>
+  </div>
+
+  <div class="container" ng-controller="searchCtrl">
+
+    <form name="Form" onsubmit="">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <label ng-bind="name" for="fromCity">Flying From</label><br> <br>
+          <input class="form-control" style="color:white ; background-color: DarkBlue  ;" name="fromCity" id="fromCity" placeholder="From City" oninput="return showOption('fromCity' , 'departing')" ng-model="fromCity">
+        </div>
+        <div class="col-sm-4">
+          <label for="toCity">Flying to</label><br><br>
+          <input type="text" class="form-control" style="color:white ; background-color: DarkBlue  ;" name="toCity" id="toCity" placeholder="To City" oninput="return showOption('toCity' , 'returning')" ng-model="toCity">
+        </div>
+        <div class="radio" >
+          <label><input style="color: GoldenRod" type="radio" name="directionOptRadio" value="ONE_WAY">One Way</label>
+        <br>
+        <label><input type="radio" name="directionOptRadio" value="ROUND_TRIPS" checked="">Round Trip</label>
+      </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <label for="departing">Departing</label><br>
+          <select class="form-control" style="color:white; background-color: DarkBlue  ;" name="departing" id="departing">
+            <option id="BKK">BKK - Suvarnabumi International Airport</option>
+            <option id="DMK">DMK - Don Mueang International Airport</option>
+            <option id="HKT">HKT - Phuket International Airport</option>
+            <option id="HDY">HDY - Hat Yai International Airport</option>
+            <option id="CNX">CNX - Chiang Mai International Airport</option>
+          </select><br>
+        </div>
+        <div class="col-sm-4">
+          <label for="returning">Returning</label><br>
+          <select class="form-control" style="color:white; background-color: DarkBlue  ;" name="returning" id="returning">
+            <option id="BKK">BKK - Suvarnabumi International Airport</option>
+            <option id="DMK">DMK - Don Mueang International Airport</option>
+            <option id="HKT">HKT - Phuket International Airport</option>
+            <option id="HDY">HDY - Hat Yai International Airport</option>
+            <option id="CNX">CNX - Chiang Mai International Airport</option>
+          </select>
+        </div>
+      </div><br>
+
+      <div class="row">
+          <div class="col-sm-2" >Adults</div>
+
+          <div class="col-sm-2">
+            <label for="returning">Returning</label><br>
+            <select class="form-control" style="color:white; background-color: DarkBlue ;" name="returning" id="returning">
+              <option id="1">1</option>
+              <option id="2">2</option>
+              <option id="3">3</option>
+              <option id="4">4</option>
+              <option id="5">5</option>
+              <option id="4">6</option>
+              <option id="5">7</option>
+            </select>
+          </div>
+
+        <div class="col-sm-2" >Travel Class</div>
+
+          <div class="col-sm-2" >
+            <label for="returning">Choose Travel Class</label><br>
+            <select class="form-control" style="color:white; background-color: DarkBlue ;" name="returning" id="returning">
+              <option id="Economy">Economy</option>
+              <option id="Busines">Busines</option>
+              <option id="First">First Class</option>
+              <option id="Premium">Premium Economy</option>
+            </select>
+          </div>
+
+      </div><br>
+      <button type="button" style="color:white; background-color: DarkBlue ;" onclick="myFunction()">Search</button>
+      <p id="demo"></p>
+      <!-- <button class="btn btn-default" style="color:white; background-color: DarkBlue ;" id="searchButton" ng-click="submit()" disabled=""> Search</button> -->
+    </form>
+  </div>
+
+  <script>
+    function myFunction() {
+      if(confirm("confirm flight")){
+          text = window.location='viewof2.html'
+      }else
+          text = window.location='Home.html'
+
+          document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+  <script src="ng/flight.js"></script>
+  <script src="js/plus.js"></script>`
+
+
+
+</body></html>
